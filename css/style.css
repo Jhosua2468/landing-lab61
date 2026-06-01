@@ -1,13 +1,61 @@
-body { margin: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #f0f2f5; color: #333; }
-.container { max-width: 900px; margin: 0 auto; padding: 20px; }
-header { background-color: #003366; color: white; padding: 40px 20px; text-align: center; border-bottom: 5px solid #cc0000; }
-header h1 { margin: 10px 0; font-size: 2.5rem; }
-.subtitle { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: #b3c6ff; margin-bottom: 10px; }
-.card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; }
-.card h2 { color: #003366; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 0; }
-.tech-list { line-height: 1.8; }
-button { background-color: #cc0000; color: white; border: none; padding: 12px 24px; font-size: 1rem; border-radius: 5px; cursor: pointer; font-weight: bold; transition: background 0.3s; margin-top: 15px; }
-button:hover { background-color: #990000; }
-.hidden { display: none; }
-#status-box { margin-top: 20px; padding: 15px; background-color: #e8f5e9; color: #2e7d32; border-left: 5px solid #4caf50; border-radius: 4px; font-weight: bold; }
-footer { text-align: center; padding: 20px; background-color: #ddd; font-size: 0.9rem; margin-top: 40px; }
+body {
+  font-family: 'Courier New', Courier, monospace; /* Toque informal/tech */
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.main-wrapper {
+  max-width: 800px;
+  padding: 2rem;
+  text-align: center;
+}
+header .logo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+.services {
+  display: flex;
+  gap: 20px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service-card {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 0 4px 6px rgba(0,255,204,0.1);
+}
+.service-card h3 { color: #ff0055; }
+button {
+  background-color: #00ffcc;
+  color: #121212;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+button:hover {
+  background-color: #00ccaa;
+  transform: scale(1.05);
+}
+.oculto { display: none; }
+#mensaje-respuesta {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #2a2a2a;
+  border-left: 5px solid #00ffcc;
+  font-weight: bold;
+}

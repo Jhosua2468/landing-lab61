@@ -3,39 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto COM610 | Sistema de Viajes</title>
+  <title>PixelFix | Reparación de Equipos</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <p class="subtitle">Universidad Mayor, Real y Pontificia de San Francisco Xavier de Chuquisaca</p>
-      <h1>Sistema Web de Planificación de Viajes Económicos</h1>
-      <p>Proyecto Final - Asignatura: Trabajando en la Nube (COM610)</p>
-    </div>
-  </header>
+  <div class="main-wrapper">
+    <header>
+      <div class="logo">👾 PixelFix</div>
+      <p>Revivimos tu PC, laptop o consola. Rápido, sin rodeos y a buen precio.</p>
+    </header>
 
-  <main class="container">
-    <section class="card">
-      <h2>Descripción del Proyecto</h2>
-      <p>Plataforma diseñada con arquitectura cliente-servidor para optimizar la planificación de rutas y presupuestos turísticos.</p>
+    <section class="services">
+      <div class="service-card">
+        <h3>💻 Mantenimiento PC</h3>
+        <p>Limpieza profunda, cambio de pasta térmica y optimización de sistema.</p>
+      </div>
+      <div class="service-card">
+        <h3>🎮 Consolas Retro y Modernas</h3>
+        <p>Reparación de placas, cambio de puertos HDMI y joysticks con drift.</p>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Arquitectura Cloud</h2>
-      <ul class="tech-list">
-        <li><strong>Frontend:</strong> Vue.js (Alojado en S3 + CloudFront)</li>
-        <li><strong>Backend:</strong> NestJS (Instancia EC2)</li>
-        <li><strong>Base de Datos:</strong> Amazon RDS (MySQL)</li>
-      </ul>
-      <button id="btn-demo">Verificar Estado de Despliegue CI/CD</button>
-      <div id="status-box" class="hidden"></div>
+    <section class="cta-section">
+      <h2>¿Tu equipo está fallando?</h2>
+      <p>Haz clic abajo para obtener un diagnóstico inicial gratuito.</p>
+      <button id="btn-diagnostico">Solicitar Diagnóstico</button>
+      <div id="mensaje-respuesta" class="oculto"></div>
     </section>
-  </main>
-
-  <footer>
-    <p>Desarrollado por: Josué Saygua Romero - Ing. de Sistemas</p>
-  </footer>
+  </div>
 
   <script src="js/app.js"></script>
 </body>
