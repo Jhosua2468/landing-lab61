@@ -3,32 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TravelSync | Tu Viaje Inteligente</title>
+  <title>Proyecto COM610 | Sistema de Viajes</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="hero">
+  <header>
     <div class="container">
-      <h1>TravelSync App</h1>
-      <p>La plataforma definitiva para organizar tus viajes económicos con Inteligencia Artificial.</p>
-      <button id="cta-btn">Únete a la lista de espera VIP</button>
-      <p id="response-msg" class="hidden"></p>
+      <p class="subtitle">Universidad Mayor, Real y Pontificia de San Francisco Xavier de Chuquisaca</p>
+      <h1>Sistema Web de Planificación de Viajes Económicos</h1>
+      <p>Proyecto Final - Asignatura: Trabajando en la Nube (COM610)</p>
     </div>
   </header>
 
-  <section class="features">
-    <div class="container">
-      <h2>¿Por qué elegir TravelSync?</h2>
-      <div class="grid">
-        <div class="card">🚀 Rutas optimizadas en segundos</div>
-        <div class="card">💸 Presupuestos ajustados a tu bolsillo</div>
-        <div class="card">🌍 Sincronización offline en cualquier país</div>
-      </div>
-    </div>
-  </section>
+  <main class="container">
+    <section class="card">
+      <h2>Descripción del Proyecto</h2>
+      <p>Plataforma diseñada con arquitectura cliente-servidor para optimizar la planificación de rutas y presupuestos turísticos.</p>
+    </section>
+
+    <section class="card">
+      <h2>Arquitectura Cloud</h2>
+      <ul class="tech-list">
+        <li><strong>Frontend:</strong> Vue.js (Alojado en S3 + CloudFront)</li>
+        <li><strong>Backend:</strong> NestJS (Instancia EC2)</li>
+        <li><strong>Base de Datos:</strong> Amazon RDS (MySQL)</li>
+      </ul>
+      <button id="btn-demo">Verificar Estado de Despliegue CI/CD</button>
+      <div id="status-box" class="hidden"></div>
+    </section>
+  </main>
 
   <footer>
-    <p>Desplegado automáticamente con AWS S3, CloudFront y GitHub Actions.</p>
+    <p>Desarrollado por: Josué Saygua Romero - Ing. de Sistemas</p>
   </footer>
 
   <script src="js/app.js"></script>
