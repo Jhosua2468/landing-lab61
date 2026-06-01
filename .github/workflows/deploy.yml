@@ -21,7 +21,7 @@ jobs:
 
       - name: 3. Sincronizar archivos con S3 (Con exclusiones)
         run: |
-          aws s3 sync . s3://${{ vars.AWS_S3_BUCKET }} \
+          aws s3 syncta . s3://${{ vars.AWS_S3_BUCKET }} \
             --delete \
             --exclude ".git/*" \
             --exclude ".github/*" \
